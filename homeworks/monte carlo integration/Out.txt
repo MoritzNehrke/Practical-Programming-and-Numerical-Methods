@@ -1,9 +1,0 @@
-We calculatea the area of a unit circle(known to be 3.14159) with plain MC and quasi-random MC:
-The error comparison can be seen in circle.pdf.
-We calculate the area of a ellpisoid (123) known to be 25.1327: 
-25.134
-We calculate ∫0π  dx/π ∫0π  dy/π ∫0π  dz/π [1-cos(x)cos(y)cos(z)]-1 = Γ(1/4)4/(4π3) ≈1.3932given in the exercise four different ways:
-i) using plain MC: 1.39185
-ii) using quasi-random MC: 1.39114
-iii) using the generator from the standard C++ library: 1.3932
-iv) using stratified sampling: 1.39561
