@@ -1,0 +1,63 @@
+We find an extremum to the Rosenbrock function starting at (0,0)
+(x,y) =  (0.999991,0.999981) in steps = 15
+f(x,y) at extremum = 8.62246e-11
+grad(f) at extremum = (-1.29166e-05,-2.82639e-06)
+We find an extremum to the Rosenbrock function starting at (10,10)
+(x,y) =  (0.999993,0.999986) in steps = 49
+f(x,y) at extremum = 5.06227e-11
+grad(f) at extremum = (-6.38097e-06,-3.9218e-06)
+We find an extremum to the Himmelblau function starting at (0,0)
+(x,y) =  (-0.120214,-0.325101) in steps = 1000
+f(x,y) at extremum = 177.134
+grad(f) at extremum = (-8.59024,-13.4996)
+We find an extremum to the Himmelblau function starting at (5,5)
+(x,y) =  (3,2) in steps = 6
+f(x,y) at extremum = 4.15774e-13
+grad(f) at extremum = (-2.89445e-06,3.74987e-06)
+We find an extremum to the Himmelblau function starting at (-5,5)
+(x,y) =  (-2.80512,3.13131) in steps = 5
+f(x,y) at extremum = 4.23703e-14
+grad(f) at extremum = (-2.05499e-06,-1.30059e-06)
+We find an extremum to the Himmelblau function starting at (-5,-5)
+(x,y) =  (-3.77931,-3.28319) in steps = 5
+f(x,y) at extremum = 1.3601e-13
+grad(f) at extremum = (-3.98802e-06,-2.34814e-06)
+We find an extremum to the Himmelblau function starting at (5,-5)
+(x,y) =  (3.58443,-1.84813) in steps = 6
+f(x,y) at extremum = 5.17589e-13
+grad(f) at extremum = (-1.6882e-06,-5.50583e-06)
+Breit-Wigner fit to Higgs boson resonance data in steps = 18
+Fitted Higgs boson mass m = 125.972 GeV
+Fitted width Gamma = 2.08633 GeV
+Fitted scale factor A = 9.87621
+Steps needed steps = 18
+The comparison between fit and measurement can be seen in higgs.pdf.
+We find an extremum to the Rosenbrock function starting at (0,0)
+(x,y) =  (1,0.999999) in steps = 15
+f(x,y) at extremum = 1.2884e-13
+grad(f) at extremum = (-1.02552e-06,1.53902e-07)
+We find an extremum to the Rosenbrock function starting at (10,10)
+(x,y) =  (1,1) in steps = 49
+f(x,y) at extremum = 3.78321e-12
+grad(f) at extremum = (5.91498e-06,-1.0131e-06)
+We find an extremum to the Himmelblau function starting at (0,0)
+(x,y) =  (-0.120214,-0.32511) in steps = 1000
+f(x,y) at extremum = 177.134
+grad(f) at extremum = (-8.59022,-13.4994)
+We find an extremum to the Himmelblau function starting at (5,5)
+(x,y) =  (3,2) in steps = 6
+f(x,y) at extremum = 5.88075e-14
+grad(f) at extremum = (2.18012e-07,1.8878e-06)
+We find an extremum to the Himmelblau function starting at (-5,5)
+(x,y) =  (-2.80512,3.13131) in steps = 5
+f(x,y) at extremum = 4.93132e-13
+grad(f) at extremum = (-7.98301e-06,4.7775e-07)
+We find an extremum to the Himmelblau function starting at (-5,-5)
+(x,y) =  (-3.77931,-3.28319) in steps = 5
+f(x,y) at extremum = 2.69579e-18
+grad(f) at extremum = (1.11544e-08,-2.14623e-08)
+We find an extremum to the Himmelblau function starting at (5,-5)
+(x,y) =  (3.58443,-1.84813) in steps = 7
+f(x,y) at extremum = 7.26854e-19
+grad(f) at extremum = (-1.10458e-08,2.15771e-09)
+We can see that central difference achieves generally better results.

@@ -1,0 +1,2 @@
+The fitted half time is 4.06242 +- 0.170394 days and is close to the 3.66 days I found on Wikipedia.
+A plot of the fit can be found as decay.pdf where also the uncertainties of a and lambda where checked: maximum (a+da,lambda-dlambda) and minimum (a-da,lambda+dlambda)

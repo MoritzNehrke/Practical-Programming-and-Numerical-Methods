@@ -1,0 +1,2 @@
+Cost function before training:15.3602
+Cost function after training: 0.000503531

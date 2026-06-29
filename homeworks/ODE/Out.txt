@@ -1,0 +1,10 @@
+We test the algorithm on the simple example u'' = - u with initial conditions u(0) = 1 and u'(0) = 0. The result can be seen in test.pdf.
+steps taken: 4550
+We futher test the algorithm for a pendulum with friction. This can be seen in pend.pdf.
+steps taken: 11891
+We consider the equation of equatorial motion of a planet around a star in General Relativity for: eps = 0.01, u(0) = 1 and u'(0) = 0 found in star1.pdf, eps = 0, u(0) = 1 and u'(0) = -0.5 found in star2.pdf, eps = 0.01, u(0) = 1 and u'(0) = -0.5 found in star1.pdf
+steps taken: 984
+steps taken: 61518
+steps taken: 60795
+We will know find a planar periodic solution to the dynamics of a Newtonian gravitational three-body problem. This can be seen in threebody.pdf
+steps taken: 672920
