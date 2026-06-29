@@ -1,0 +1,49 @@
+We run a few test cases:
+∫dx√(x) from 0 to 1 calculated to 0.666667 with accuracy 1.11129e-11 (estimated 5.49167e-09) < 1e-8 and it took ncalls = 1800
+∫dx1/√(x) from 0 to 1 calculated to 2 with accuracy -6.15508e-13 (estimated 5.9092e-09) < 1e-8 and it took ncalls = 70208
+∫dx/√(1-x*x) from 0 to 1 calculated to 1.5708 with accuracy -6.37435e-09 (estimated 6.15709e-09) < 1e-8 and it took ncalls = 29484
+∫dxln(x)/√(x) from 0 to 1 calculated to -4 with accuracy 3.11751e-13 (estimated 5.40294e-09) < 1e-8 and it took ncalls = 198448
+We calculate erf(x) compare it to the integrated erf(x) function and check its accuracy. This can be seen in erf.pdf and erf1.pdf.
+We test the Clenshaw-Curtis variable transformation for two examples from before
+∫dx1/√(x) from 0 to 1 calculated to 2 with accuracy 3.95239e-14 (estimated 6.81757e-09) < 1e-8 and it took ncalls = 1904
+∫dxln(x)/√(x) from 0 to 1 calculated to -4 with accuracy 4.79295e-07 (estimated 5.84172e-09) !< 1e-8 and it took ncalls = 13848
+∫dxe(-x) from 0 to inf calculated to 1 with accuracy -1.11339e-10 (estimated 4.47732e-09) < 1e-8 and it took ncalls = 3768
+∫dxe(-x*x) from -inf to 0 calculated to 0.886227 with accuracy -1.14603e-10 (estimated 4.69476e-09) < 1e-8 and it took ncalls = 3980
+∫dxe(-x*x) from -inf to inf calculated to 1.77245 with accuracy -6.27578e-11 (estimated 4.19234e-09) < 1e-8 and it took ncalls = 7440
+Investigating error estimate quality across difficult integrals:
+  sqrt(x):
+    tol=1.000000e-02  true_err=6.014215e-03  est_err=6.060636e-03  ratio(est/true)=1.007719e+00  ncalls=4
+    tol=1.000000e-04  true_err=1.426623e-05  est_err=7.174214e-05  ratio(est/true)=5.028809e+00  ncalls=40
+    tol=1.000000e-06  true_err=1.301856e-08  est_err=5.617417e-07  ratio(est/true)=4.314930e+01  ncalls=276
+    tol=1.000000e-08  true_err=1.111289e-11  est_err=5.491667e-09  ratio(est/true)=4.941710e+02  ncalls=1800
+    tol=1.000000e-10  true_err=1.676437e-14  est_err=5.779649e-11  ratio(est/true)=3.447580e+03  ncalls=11168
+  1/sqrt(x):
+    tol=1.000000e-02  true_err=4.838825e-04  est_err=1.978914e-03  ratio(est/true)=4.089659e+00  ncalls=404
+    tol=1.000000e-04  true_err=2.612036e-06  est_err=7.708978e-05  ratio(est/true)=2.951329e+01  ncalls=1584
+    tol=1.000000e-06  true_err=1.050844e-09  est_err=6.148834e-07  ratio(est/true)=5.851329e+02  ncalls=11148
+    tol=1.000000e-08  true_err=6.155076e-13  est_err=5.909201e-09  ratio(est/true)=9.600532e+03  ncalls=70208
+    tol=1.000000e-10  true_err=6.661338e-16  est_err=5.324138e-11  ratio(est/true)=7.992595e+04  ncalls=437884
+  1/sqrt(1-x^2):
+    tol=1.000000e-02  true_err=3.476055e-04  est_err=1.548385e-03  ratio(est/true)=4.454433e+00  ncalls=208
+    tol=1.000000e-04  true_err=1.875520e-06  est_err=5.813416e-05  ratio(est/true)=3.099629e+01  ncalls=796
+    tol=1.000000e-06  true_err=7.496224e-09  est_err=5.214002e-07  ratio(est/true)=6.955504e+01  ncalls=4780
+    tol=1.000000e-08  true_err=6.374352e-09  est_err=6.157092e-09  ratio(est/true)=9.659165e-01  ncalls=29484
+    tol=1.000000e-10  true_err=6.373643e-09  est_err=5.317192e-11  ratio(est/true)=8.342470e-03  ncalls=177228
+  ln(x)/sqrt(x):
+    tol=1.000000e-02  true_err=2.595713e-03  est_err=7.534608e-03  ratio(est/true)=2.902713e+00  ncalls=404
+    tol=1.000000e-04  true_err=1.651010e-06  est_err=8.093489e-05  ratio(est/true)=4.902144e+01  ncalls=2748
+    tol=1.000000e-06  true_err=5.869687e-10  est_err=6.137502e-07  ratio(est/true)=1.045627e+03  ncalls=24744
+    tol=1.000000e-08  true_err=3.117506e-13  est_err=5.402939e-09  ratio(est/true)=1.733097e+04  ncalls=198448
+    tol=1.000000e-10  true_err=2.131628e-14  est_err=5.508987e-11  ratio(est/true)=2.584403e+03  ncalls=1433316
+  1/sqrt(x) [CC]:
+    tol=1.000000e-02  true_err=1.296817e-04  est_err=6.680868e-03  ratio(est/true)=5.151745e+01  ncalls=8
+    tol=1.000000e-04  true_err=1.096893e-07  est_err=6.900120e-05  ratio(est/true)=6.290605e+02  ncalls=52
+    tol=1.000000e-06  true_err=6.235990e-11  est_err=6.601397e-07  ratio(est/true)=1.058597e+04  ncalls=352
+    tol=1.000000e-08  true_err=3.952394e-14  est_err=6.817567e-09  ratio(est/true)=1.724921e+05  ncalls=1904
+    tol=1.000000e-10  true_err=4.720668e-13  est_err=4.723987e-11  ratio(est/true)=1.000703e+02  ncalls=14276
+  ln(x)/sqrt(x) [CC]:
+    tol=1.000000e-02  true_err=1.855337e-02  est_err=1.106040e-02  ratio(est/true)=5.961398e-01  ncalls=28
+    tol=1.000000e-04  true_err=1.866604e-06  est_err=8.725307e-05  ratio(est/true)=4.674429e+01  ncalls=272
+    tol=1.000000e-06  true_err=4.777772e-07  est_err=6.324913e-07  ratio(est/true)=1.323821e+00  ncalls=2004
+    tol=1.000000e-08  true_err=4.792954e-07  est_err=5.841716e-09  ratio(est/true)=1.218813e-02  ncalls=13848
+    tol=1.000000e-10  true_err=4.783920e-07  est_err=5.407084e-11  ratio(est/true)=1.130262e-04  ncalls=98120

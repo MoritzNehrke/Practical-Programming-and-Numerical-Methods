@@ -1,0 +1,51 @@
+We find an extremum to the Rosenbrock function starting at (0,0)
+(x,y) =  (1,1)
+f(x,y) at extremum = 4.38804e-30
+grad(f) at extremum = (-4.79616e-14,2.22045e-14)
+We find an extremum to the Rosenbrock function starting at (10,10)
+(x,y) =  (1,1)
+f(x,y) at extremum = 9.52816e-25
+grad(f) at extremum = (6.64535e-12,-2.35367e-12)
+We find an extremum to the Himmelblau function starting at (0,0)
+(x,y) =  (-0.270845,-0.923039)
+f(x,y) at extremum = 181.617
+grad(f) at extremum = (-5.04712e-16,0)
+We find an extremum to the Himmelblau function starting at (5,5)
+(x,y) =  (3,2)
+f(x,y) at extremum = 4.10208e-28
+grad(f) at extremum = (-2.4869e-14,1.45661e-13)
+We find an extremum to the Himmelblau function starting at (-5,5)
+(x,y) =  (-2.80512,3.13131)
+f(x,y) at extremum = 9.19023e-28
+grad(f) at extremum = (-3.44166e-13,2.70222e-14)
+We find an extremum to the Himmelblau function starting at (-5,-5)
+(x,y) =  (-3.77931,-3.28319)
+f(x,y) at extremum = 3.15544e-30
+grad(f) at extremum = (-3.55271e-15,2.33284e-14)
+We find an extremum to the Himmelblau function starting at (5,-5)
+(x,y) =  (3.58443,-1.84813)
+f(x,y) at extremum = 1.3084e-25
+grad(f) at extremum = (3.13699e-13,-2.72258e-12)
+Lowest bound-state energy E_0 = -0.499975
+The wavefunction of E_0 compared to the exact solution can be found in wavefunction.pdf.
+We implemented the Good Broyden method, the quadratic interpolation line-search and try it on the Himmelblau function
+We find an extremum to the Himmelblau function starting at (0,0)
+(x,y) =  (-0.270845,-0.923039)
+f(x,y) at extremum = 181.617
+grad(f) at extremum = (9.38e-13,-7.74492e-13)
+We find an extremum to the Himmelblau function starting at (5,5)
+(x,y) =  (3,2)
+f(x,y) at extremum = 4.86964e-27
+grad(f) at extremum = (5.24025e-13,-2.73559e-13)
+We find an extremum to the Himmelblau function starting at (-5,5)
+(x,y) =  (-2.80512,3.13131)
+f(x,y) at extremum = 0
+grad(f) at extremum = (0,0)
+We find an extremum to the Himmelblau function starting at (-5,-5)
+(x,y) =  (-3.77931,-3.28319)
+f(x,y) at extremum = 1.57772e-29
+grad(f) at extremum = (5.72599e-14,-3.04339e-14)
+We find an extremum to the Himmelblau function starting at (5,-5)
+(x,y) =  (3.58443,-1.84813)
+f(x,y) at extremum = 7.09975e-30
+grad(f) at extremum = (-5.32907e-15,1.96976e-14)
