@@ -1,0 +1,1 @@
+Optimal lambda computed by newton_minimize: lambda = 0.0125677 in iterations = 1
