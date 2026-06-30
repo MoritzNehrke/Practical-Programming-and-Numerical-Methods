@@ -54,6 +54,6 @@ Plot: eps0_vs_dr.dat eps0_vs_rmax.dat wavefunctions.dat times.dat
 	gnuplot times.gp
 
 clean:
-	rm -f main *.o *.dat Out.txt *.pdf
+	rm -f main *.o *.dat Out.txt *.pdf fit.log
 
 .PHONY: sweeps clean
